@@ -9,5 +9,5 @@ _start:
 	ldr	a2, =helloworld
 	mov	a1, #1
 	swi	#0x900004
-	mov	a1, #87
+	mov	a1, #0
 	swi	#0x900001
