@@ -1,12 +1,12 @@
 	.section	.rodata
 helloworld_w:
-	.string	"H\0e\0l\0l\0o\0 \0w\0o\0r\0l\0d\n\0\0"
+	.string	"H\0e\0l\0l\0o\0 \0w\0o\0r\0l\0d\0\n\0\0"
 	.align	0
 
 helloworld_nt_string:
 	.short	24
 	.short	26
-	.long	
+	.long	helloworld_w
 
 	.text
 	.global	_NtProcessStartup
